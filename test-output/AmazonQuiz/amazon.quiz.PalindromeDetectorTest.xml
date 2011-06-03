@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="laptop3" name="amazon.quiz.PalindromeDetectorTest" tests="25" failures="0" timestamp="3 Jun 2011 17:43:25 GMT" time="0.089" errors="0">
+  <testcase name="testInvalidPalindromes" time="0.0070" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testInvalidPalindromes" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testInvalidPalindromes" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testInvalidPalindromes" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testInvalidTypes" time="0.0020" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testInvalidTypes" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testInvalidTypes" time="0.0020" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testInvalidTypes" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testInvalidTypes" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testInvalidTypes" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testMinLength" time="0.0" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0020" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0020" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testValidPalindromes" time="0.0050" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testValidPalindromes" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testValidPalindromes" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testValidPalindromes" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+</testsuite>

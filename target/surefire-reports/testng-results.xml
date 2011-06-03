@@ -1,0 +1,641 @@
+<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="43" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="43" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+      <class name="amazon.quiz.PalindromeDetectorTest">
+        <test-method status="PASS" signature="testInvalidPalindromes(java.lang.String)" name="testInvalidPalindromes" duration-ms="3" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cat]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testInvalidPalindromes(java.lang.String)" name="testInvalidPalindromes" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SONAR]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testInvalidPalindromes(java.lang.String)" name="testInvalidPalindromes" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wobbly]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testInvalidPalindromes(java.lang.String)" name="testInvalidPalindromes" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[blue]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testInvalidTypes(java.lang.String)" name="testInvalidTypes" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[argument type mismatch]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1098)
+	at org.testng.TestRunner.privateRun(TestRunner.java:727)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:40)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:83)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:151)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="testInvalidTypes(java.lang.String)" name="testInvalidTypes" duration-ms="1" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[999.999]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[argument type mismatch]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1098)
+	at org.testng.TestRunner.privateRun(TestRunner.java:727)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:40)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:83)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:151)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="testInvalidTypes(java.lang.String)" name="testInvalidTypes" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[argument type mismatch]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1098)
+	at org.testng.TestRunner.privateRun(TestRunner.java:727)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:40)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:83)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:151)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="testInvalidTypes(java.lang.String)" name="testInvalidTypes" duration-ms="1" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@3747c1db]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[argument type mismatch]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1098)
+	at org.testng.TestRunner.privateRun(TestRunner.java:727)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:40)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:83)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:151)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="testInvalidTypes(java.lang.String)" name="testInvalidTypes" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class amazon.quiz.PalindromeDetector]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[argument type mismatch]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1098)
+	at org.testng.TestRunner.privateRun(TestRunner.java:727)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:40)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:83)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:151)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="testInvalidTypes(java.lang.String)" name="testInvalidTypes" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[palindrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[argument type mismatch]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1098)
+	at org.testng.TestRunner.privateRun(TestRunner.java:727)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:40)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:83)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:151)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="testMinLength()" name="testMinLength" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+        </test-method>
+        <test-method status="PASS" signature="testUndefined(java.lang.String, amazon.quiz.PalindromeDetectorTest$Result)" name="testUndefined" duration-ms="1" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[R.A.D.A.R.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FAIL]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testUndefined(java.lang.String, amazon.quiz.PalindromeDetectorTest$Result)" name="testUndefined" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dad]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PASS]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testUndefined(java.lang.String, amazon.quiz.PalindromeDetectorTest$Result)" name="testUndefined" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123321]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PASS]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testUndefined(java.lang.String, amazon.quiz.PalindromeDetectorTest$Result)" name="testUndefined" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ kook ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PASS]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testUndefined(java.lang.String, amazon.quiz.PalindromeDetectorTest$Result)" name="testUndefined" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FAIL]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testUndefined(java.lang.String, amazon.quiz.PalindromeDetectorTest$Result)" name="testUndefined" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Satan oscillate my metallic sonatas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PASS]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testUndefined(java.lang.String, amazon.quiz.PalindromeDetectorTest$Result)" name="testUndefined" duration-ms="1" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FAIL]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testUndefined(java.lang.String, amazon.quiz.PalindromeDetectorTest$Result)" name="testUndefined" duration-ms="1" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dàd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PASS]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testUndefined(java.lang.String, amazon.quiz.PalindromeDetectorTest$Result)" name="testUndefined" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FAIL]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testUndefined(java.lang.String, amazon.quiz.PalindromeDetectorTest$Result)" name="testUndefined" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[adidà]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FAIL]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidPalindromes(java.lang.String)" name="testValidPalindromes" duration-ms="1" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mom]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidPalindromes(java.lang.String)" name="testValidPalindromes" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[level]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidPalindromes(java.lang.String)" name="testValidPalindromes" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[poop]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidPalindromes(java.lang.String)" name="testValidPalindromes" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RADAR]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+      <class name="amazon.quiz.DuplicateDetectorTest">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, [I, [I)" name="testScenarios" duration-ms="7" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[null array]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[I@48082d37]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testScenarios(java.lang.String, [I, [I)" name="testScenarios" duration-ms="1" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[empty array]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@10d09ad3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[I@6f649b44]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testScenarios(java.lang.String, [I, [I)" name="testScenarios" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[one match]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@360dc67e]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[I@426295eb]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testScenarios(java.lang.String, [I, [I)" name="testScenarios" duration-ms="4" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[two matches]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@56609959]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[I@5ff3ce5c]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testScenarios(java.lang.String, [I, [I)" name="testScenarios" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[match a triple]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@7f712b3a]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[I@5ecd2e33]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testScenarios(java.lang.String, [I, [I)" name="testScenarios" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[match a negative number]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@250d593e]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[I@f5e0873]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testScenarios(java.lang.String, [I, [I)" name="testScenarios" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[match a double and triple]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@709446e4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[I@16ba5c7a]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testScenarios(java.lang.String, [I, [I)" name="testScenarios" duration-ms="1" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[many matches out of order]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@667cbde6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[I@7977b9b]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testScenarios(java.lang.String, [I, [I)" name="testScenarios" duration-ms="0" started-at="2011-06-03T10:45:54Z" finished-at="2011-06-03T10:45:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[match a lot of zeros]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@6a340101]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[I@7c2e1f1f]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

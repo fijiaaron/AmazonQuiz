@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Command line test" failures="0" tests="34" time="0.043" errors="0">
+  <properties/>
+  <testcase name="testScenarios" time="0.0070" classname="amazon.quiz.DuplicateDetectorTest"/>
+  <testcase name="testScenarios" time="0.0010" classname="amazon.quiz.DuplicateDetectorTest"/>
+  <testcase name="testScenarios" time="0.0" classname="amazon.quiz.DuplicateDetectorTest"/>
+  <testcase name="testScenarios" time="0.0040" classname="amazon.quiz.DuplicateDetectorTest"/>
+  <testcase name="testScenarios" time="0.0" classname="amazon.quiz.DuplicateDetectorTest"/>
+  <testcase name="testScenarios" time="0.0" classname="amazon.quiz.DuplicateDetectorTest"/>
+  <testcase name="testScenarios" time="0.0" classname="amazon.quiz.DuplicateDetectorTest"/>
+  <testcase name="testScenarios" time="0.0010" classname="amazon.quiz.DuplicateDetectorTest"/>
+  <testcase name="testScenarios" time="0.0" classname="amazon.quiz.DuplicateDetectorTest"/>
+  <testcase name="testInvalidPalindromes" time="0.0030" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testInvalidPalindromes" time="0.0" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testInvalidPalindromes" time="0.0" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testInvalidPalindromes" time="0.0" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testInvalidTypes" time="0.0" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testInvalidTypes" time="0.0" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testInvalidTypes" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testInvalidTypes" time="0.0" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testInvalidTypes" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testInvalidTypes" time="0.0" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testMinLength" time="0.0" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testUndefined" time="0.0" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testValidPalindromes" time="0.0010" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testValidPalindromes" time="0.0" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testValidPalindromes" time="0.0" classname="amazon.quiz.PalindromeDetectorTest"/>
+  <testcase name="testValidPalindromes" time="0.0" classname="amazon.quiz.PalindromeDetectorTest"/>
+</testsuite>

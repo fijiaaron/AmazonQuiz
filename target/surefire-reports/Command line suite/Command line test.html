@@ -1,0 +1,423 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>34/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jun 03 10:45:54 PDT 2011</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (43 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testInvalidPalindromes()'><b>testInvalidPalindromes</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: cat</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testInvalidPalindromes()'><b>testInvalidPalindromes</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: wobbly</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testInvalidPalindromes()'><b>testInvalidPalindromes</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: SONAR</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testInvalidPalindromes()'><b>testInvalidPalindromes</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: blue</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testInvalidTypes()'><b>testInvalidTypes</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: a</td>
+<td><div><pre>java.lang.IllegalArgumentException: argument type mismatch
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace866838863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace866838863'><pre>java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1098)
+	at org.testng.TestRunner.privateRun(TestRunner.java:727)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:40)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:83)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:151)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+</pre></div></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testInvalidTypes()'><b>testInvalidTypes</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: 1</td>
+<td><div><pre>java.lang.IllegalArgumentException: argument type mismatch
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace431709193", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace431709193'><pre>java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1098)
+	at org.testng.TestRunner.privateRun(TestRunner.java:727)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:40)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:83)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:151)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+</pre></div></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testInvalidTypes()'><b>testInvalidTypes</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: 999.999</td>
+<td><div><pre>java.lang.IllegalArgumentException: argument type mismatch
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1536647185", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1536647185'><pre>java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1098)
+	at org.testng.TestRunner.privateRun(TestRunner.java:727)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:40)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:83)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:151)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+</pre></div></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testInvalidTypes()'><b>testInvalidTypes</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: class amazon.quiz.PalindromeDetector</td>
+<td><div><pre>java.lang.IllegalArgumentException: argument type mismatch
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace790899473", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace790899473'><pre>java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1098)
+	at org.testng.TestRunner.privateRun(TestRunner.java:727)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:40)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:83)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:151)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+</pre></div></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testInvalidTypes()'><b>testInvalidTypes</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: [Ljava.lang.String;@3747c1db</td>
+<td><div><pre>java.lang.IllegalArgumentException: argument type mismatch
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1871151428", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1871151428'><pre>java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1098)
+	at org.testng.TestRunner.privateRun(TestRunner.java:727)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:40)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:83)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:151)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+</pre></div></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testInvalidTypes()'><b>testInvalidTypes</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: palindrome</td>
+<td><div><pre>java.lang.IllegalArgumentException: argument type mismatch
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace257798932", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace257798932'><pre>java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1098)
+	at org.testng.TestRunner.privateRun(TestRunner.java:727)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:40)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:83)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:151)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+</pre></div></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testMinLength()'><b>testMinLength</b><br>Test class: amazon.quiz.PalindromeDetectorTest</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.DuplicateDetectorTest.testScenarios()'><b>testScenarios</b><br>Test class: amazon.quiz.DuplicateDetectorTest<br>Parameters: null array, null, [I@48082d37</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.DuplicateDetectorTest@16df1832</td></tr>
+<tr>
+<td title='amazon.quiz.DuplicateDetectorTest.testScenarios()'><b>testScenarios</b><br>Test class: amazon.quiz.DuplicateDetectorTest<br>Parameters: empty array, [I@10d09ad3, [I@6f649b44</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.DuplicateDetectorTest@16df1832</td></tr>
+<tr>
+<td title='amazon.quiz.DuplicateDetectorTest.testScenarios()'><b>testScenarios</b><br>Test class: amazon.quiz.DuplicateDetectorTest<br>Parameters: one match, [I@360dc67e, [I@426295eb</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.DuplicateDetectorTest@16df1832</td></tr>
+<tr>
+<td title='amazon.quiz.DuplicateDetectorTest.testScenarios()'><b>testScenarios</b><br>Test class: amazon.quiz.DuplicateDetectorTest<br>Parameters: two matches, [I@56609959, [I@5ff3ce5c</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.DuplicateDetectorTest@16df1832</td></tr>
+<tr>
+<td title='amazon.quiz.DuplicateDetectorTest.testScenarios()'><b>testScenarios</b><br>Test class: amazon.quiz.DuplicateDetectorTest<br>Parameters: match a triple, [I@7f712b3a, [I@5ecd2e33</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.DuplicateDetectorTest@16df1832</td></tr>
+<tr>
+<td title='amazon.quiz.DuplicateDetectorTest.testScenarios()'><b>testScenarios</b><br>Test class: amazon.quiz.DuplicateDetectorTest<br>Parameters: match a double and triple, [I@709446e4, [I@16ba5c7a</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.DuplicateDetectorTest@16df1832</td></tr>
+<tr>
+<td title='amazon.quiz.DuplicateDetectorTest.testScenarios()'><b>testScenarios</b><br>Test class: amazon.quiz.DuplicateDetectorTest<br>Parameters: match a negative number, [I@250d593e, [I@f5e0873</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.DuplicateDetectorTest@16df1832</td></tr>
+<tr>
+<td title='amazon.quiz.DuplicateDetectorTest.testScenarios()'><b>testScenarios</b><br>Test class: amazon.quiz.DuplicateDetectorTest<br>Parameters: many matches out of order, [I@667cbde6, [I@7977b9b</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.DuplicateDetectorTest@16df1832</td></tr>
+<tr>
+<td title='amazon.quiz.DuplicateDetectorTest.testScenarios()'><b>testScenarios</b><br>Test class: amazon.quiz.DuplicateDetectorTest<br>Parameters: match a lot of zeros, [I@6a340101, [I@7c2e1f1f</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.DuplicateDetectorTest@16df1832</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testUndefined()'><b>testUndefined</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: Dad, PASS</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testUndefined()'><b>testUndefined</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: R.A.D.A.R., FAIL</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testUndefined()'><b>testUndefined</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: 123321, PASS</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testUndefined()'><b>testUndefined</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters:  kook , PASS</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testUndefined()'><b>testUndefined</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: Satan oscillate my metallic sonatas, PASS</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testUndefined()'><b>testUndefined</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: A, FAIL</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testUndefined()'><b>testUndefined</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: , FAIL</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testUndefined()'><b>testUndefined</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: null, FAIL</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testUndefined()'><b>testUndefined</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: dàd, PASS</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testUndefined()'><b>testUndefined</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: adidà, FAIL</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testValidPalindromes()'><b>testValidPalindromes</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: mom</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testValidPalindromes()'><b>testValidPalindromes</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: level</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testValidPalindromes()'><b>testValidPalindromes</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: poop</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+<tr>
+<td title='amazon.quiz.PalindromeDetectorTest.testValidPalindromes()'><b>testValidPalindromes</b><br>Test class: amazon.quiz.PalindromeDetectorTest<br>Parameters: RADAR</td>
+<td></td>
+<td>0</td>
+<td>amazon.quiz.PalindromeDetectorTest@10ad8659</td></tr>
+</table><p>
+</body>
+</html>

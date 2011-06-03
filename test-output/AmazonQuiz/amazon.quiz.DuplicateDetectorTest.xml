@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="laptop3" name="amazon.quiz.DuplicateDetectorTest" tests="9" failures="0" timestamp="3 Jun 2011 17:43:30 GMT" time="0.043" errors="0">
+  <testcase name="testScenarios" time="0.0090" classname="amazon.quiz.DuplicateDetectorTest"/>
+  <testcase name="testScenarios" time="0.0010" classname="amazon.quiz.DuplicateDetectorTest"/>
+  <testcase name="testScenarios" time="0.0020" classname="amazon.quiz.DuplicateDetectorTest"/>
+  <testcase name="testScenarios" time="0.0010" classname="amazon.quiz.DuplicateDetectorTest"/>
+  <testcase name="testScenarios" time="0.0010" classname="amazon.quiz.DuplicateDetectorTest"/>
+  <testcase name="testScenarios" time="0.0020" classname="amazon.quiz.DuplicateDetectorTest"/>
+  <testcase name="testScenarios" time="0.0010" classname="amazon.quiz.DuplicateDetectorTest"/>
+  <testcase name="testScenarios" time="0.0010" classname="amazon.quiz.DuplicateDetectorTest"/>
+  <testcase name="testScenarios" time="0.0010" classname="amazon.quiz.DuplicateDetectorTest"/>
+</testsuite>

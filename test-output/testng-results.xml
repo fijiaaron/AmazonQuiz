@@ -1,0 +1,181 @@
+<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="AmazonQuiz" duration-ms="43" started-at="2011-06-03T10:43:30Z" finished-at="2011-06-03T10:43:30Z">
+    <groups>
+    </groups>
+    <test name="amazon.quiz.DuplicateDetectorTest" duration-ms="43" started-at="2011-06-03T10:43:30Z" finished-at="2011-06-03T10:43:30Z">
+      <class name="amazon.quiz.DuplicateDetectorTest">
+        <test-method status="PASS" signature="testScenarios(java.lang.String, [I, [I)" name="testScenarios" duration-ms="9" started-at="2011-06-03T10:43:30Z" finished-at="2011-06-03T10:43:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[null array]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[I@3bc0f2e5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testScenarios(java.lang.String, [I, [I)" name="testScenarios" duration-ms="1" started-at="2011-06-03T10:43:30Z" finished-at="2011-06-03T10:43:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[empty array]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@f5e0873]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[I@667cbde6]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testScenarios(java.lang.String, [I, [I)" name="testScenarios" duration-ms="2" started-at="2011-06-03T10:43:30Z" finished-at="2011-06-03T10:43:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[one match]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@6a340101]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[I@7c2e1f1f]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testScenarios(java.lang.String, [I, [I)" name="testScenarios" duration-ms="1" started-at="2011-06-03T10:43:30Z" finished-at="2011-06-03T10:43:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[two matches]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@5eb7ec5d]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[I@7cfefe3f]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testScenarios(java.lang.String, [I, [I)" name="testScenarios" duration-ms="1" started-at="2011-06-03T10:43:30Z" finished-at="2011-06-03T10:43:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[match a triple]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@7ac2b2f6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[I@4737371]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testScenarios(java.lang.String, [I, [I)" name="testScenarios" duration-ms="2" started-at="2011-06-03T10:43:30Z" finished-at="2011-06-03T10:43:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[match a double and triple]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@69e328e0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[I@4090c06f]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testScenarios(java.lang.String, [I, [I)" name="testScenarios" duration-ms="1" started-at="2011-06-03T10:43:30Z" finished-at="2011-06-03T10:43:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[match a negative number]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@69267649]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[I@5c1fe88d]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testScenarios(java.lang.String, [I, [I)" name="testScenarios" duration-ms="1" started-at="2011-06-03T10:43:30Z" finished-at="2011-06-03T10:43:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[many matches out of order]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@36b60b93]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[I@69b1fbf4]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testScenarios(java.lang.String, [I, [I)" name="testScenarios" duration-ms="1" started-at="2011-06-03T10:43:30Z" finished-at="2011-06-03T10:43:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[match a lot of zeros]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@3f829e6f]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[I@186fa9fc]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

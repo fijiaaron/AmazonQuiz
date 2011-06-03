@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Command line test</td><td class="numi">6</td><td class="numi">34</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">Command line test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">amazon.quiz.DuplicateDetectorTest<td><a href="#m1"><b>testScenarios</b>  </a></td><td class="numi">9</td><td class="numi">17</td></tr>
+<tr class="passedeven"><td rowspan="5">amazon.quiz.PalindromeDetectorTest<td><a href="#m2"><b>testInvalidPalindromes</b>  </a></td><td class="numi">4</td><td class="numi">4</td></tr><tr class="passedeven"><td><a href="#m3"><b>testInvalidTypes</b>  </a></td><td class="numi">6</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m4"><b>testMinLength</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m5"><b>testUndefined</b>  </a></td><td class="numi">10</td><td class="numi">4</td></tr><tr class="passedeven"><td><a href="#m6"><b>testValidPalindromes</b>  </a></td><td class="numi">4</td><td class="numi">2</td></tr>
+</table>
+<h1>Command line test</h1>
+<a id="m1"></a><h2>amazon.quiz.DuplicateDetectorTest:testScenarios</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">match a lot of zeros</td>
+<td style="padding-left:.5em;padding-right:2em">[I@6a340101</td>
+<td style="padding-left:.5em;padding-right:2em">[I@7c2e1f1f</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">match a triple</td>
+<td style="padding-left:.5em;padding-right:2em">[I@7f712b3a</td>
+<td style="padding-left:.5em;padding-right:2em">[I@5ecd2e33</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em">two matches</td>
+<td style="padding-left:.5em;padding-right:2em">[I@56609959</td>
+<td style="padding-left:.5em;padding-right:2em">[I@5ff3ce5c</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">empty array</td>
+<td style="padding-left:.5em;padding-right:2em">[I@10d09ad3</td>
+<td style="padding-left:.5em;padding-right:2em">[I@6f649b44</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em">match a negative number</td>
+<td style="padding-left:.5em;padding-right:2em">[I@250d593e</td>
+<td style="padding-left:.5em;padding-right:2em">[I@f5e0873</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">one match</td>
+<td style="padding-left:.5em;padding-right:2em">[I@360dc67e</td>
+<td style="padding-left:.5em;padding-right:2em">[I@426295eb</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em">match a double and triple</td>
+<td style="padding-left:.5em;padding-right:2em">[I@709446e4</td>
+<td style="padding-left:.5em;padding-right:2em">[I@16ba5c7a</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">null array</td>
+<td style="padding-left:.5em;padding-right:2em">null</td>
+<td style="padding-left:.5em;padding-right:2em">[I@48082d37</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em">many matches out of order</td>
+<td style="padding-left:.5em;padding-right:2em">[I@667cbde6</td>
+<td style="padding-left:.5em;padding-right:2em">[I@7977b9b</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>amazon.quiz.PalindromeDetectorTest:testInvalidPalindromes</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">SONAR</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">wobbly</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em">blue</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">cat</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>amazon.quiz.PalindromeDetectorTest:testInvalidTypes</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">palindrome</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>argument type mismatch</p>
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+<br/>at java.lang.reflect.Method.invoke(Method.java:597)
+<br/>at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+<br/>at org.testng.TestRunner.runWorkers(TestRunner.java:1098)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:727)
+<br/>at org.testng.TestRunner.run(TestRunner.java:581)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:40)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:83)
+<br/>at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:151)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+<br/>at java.lang.Thread.run(Thread.java:619)
+<br/>1 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">a</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>argument type mismatch</p>
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+<br/>at java.lang.reflect.Method.invoke(Method.java:597)
+<br/>at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+<br/>at org.testng.TestRunner.runWorkers(TestRunner.java:1098)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:727)
+<br/>at org.testng.TestRunner.run(TestRunner.java:581)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:40)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:83)
+<br/>at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:151)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+<br/>at java.lang.Thread.run(Thread.java:619)
+<br/>1 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">[Ljava.lang.String;@3747c1db</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>argument type mismatch</p>
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+<br/>at java.lang.reflect.Method.invoke(Method.java:597)
+<br/>at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+<br/>at org.testng.TestRunner.runWorkers(TestRunner.java:1098)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:727)
+<br/>at org.testng.TestRunner.run(TestRunner.java:581)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:40)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:83)
+<br/>at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:151)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+<br/>at java.lang.Thread.run(Thread.java:619)
+<br/>1 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">1</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>argument type mismatch</p>
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+<br/>at java.lang.reflect.Method.invoke(Method.java:597)
+<br/>at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+<br/>at org.testng.TestRunner.runWorkers(TestRunner.java:1098)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:727)
+<br/>at org.testng.TestRunner.run(TestRunner.java:581)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:40)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:83)
+<br/>at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:151)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+<br/>at java.lang.Thread.run(Thread.java:619)
+<br/>1 lines not shown
+</td></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">999.999</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>argument type mismatch</p>
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+<br/>at java.lang.reflect.Method.invoke(Method.java:597)
+<br/>at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+<br/>at org.testng.TestRunner.runWorkers(TestRunner.java:1098)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:727)
+<br/>at org.testng.TestRunner.run(TestRunner.java:581)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:40)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:83)
+<br/>at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:151)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+<br/>at java.lang.Thread.run(Thread.java:619)
+<br/>1 lines not shown
+</td></tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">class amazon.quiz.PalindromeDetector</td>
+</tr>
+<tr class="stripe"><td style="padding-left:3em" colspan="1">
+<p>argument type mismatch</p>
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+<br/>at java.lang.reflect.Method.invoke(Method.java:597)
+<br/>at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+<br/>at org.testng.TestRunner.runWorkers(TestRunner.java:1098)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:727)
+<br/>at org.testng.TestRunner.run(TestRunner.java:581)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:40)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:83)
+<br/>at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:151)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+<br/>at java.lang.Thread.run(Thread.java:619)
+<br/>1 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>amazon.quiz.PalindromeDetectorTest:testMinLength</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>amazon.quiz.PalindromeDetectorTest:testUndefined</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">123321</td>
+<td style="padding-left:.5em;padding-right:2em">PASS</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">dàd</td>
+<td style="padding-left:.5em;padding-right:2em">PASS</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em"> kook </td>
+<td style="padding-left:.5em;padding-right:2em">PASS</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">Dad</td>
+<td style="padding-left:.5em;padding-right:2em">PASS</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em">null</td>
+<td style="padding-left:.5em;padding-right:2em">FAIL</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">A</td>
+<td style="padding-left:.5em;padding-right:2em">FAIL</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em">Satan oscillate my metallic sonatas</td>
+<td style="padding-left:.5em;padding-right:2em">PASS</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">R.A.D.A.R.</td>
+<td style="padding-left:.5em;padding-right:2em">FAIL</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em"></td>
+<td style="padding-left:.5em;padding-right:2em">FAIL</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">adidà</td>
+<td style="padding-left:.5em;padding-right:2em">FAIL</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>amazon.quiz.PalindromeDetectorTest:testValidPalindromes</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">RADAR</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">level</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em">poop</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">mom</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
