@@ -112,3 +112,5 @@ Test Strategy
 All testing will be performed manually for the initial release except concurrency and scalability tests.  A utility script (using JMeter) will be provided that spawns 1000 threads on 10 computers and sends 10000 messages simultaneously. 
 
 There will be bug fix releases at the end of each week.  A limited regression test will be run after each release that takes no more than 2 hours.
+
+---
