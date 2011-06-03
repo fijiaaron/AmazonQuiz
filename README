@@ -8,10 +8,12 @@ Should you have any questions about anything you are being asked in this written
 
 
 
-
 Write code in any language that given an array of integers returns an array of all the duplicated integers.  Write down any assumptions rather than asking questions.
 
-How would you test your program?
+How would you test your program?
+
+
+
 See attached java implementation DuplicateDetector.java and DuplicateDetectorTest.java. 
 
 I realize using a dynamically typed language would have been way easier.  In Python or Ruby you could use list comprehension, or a hash iterator, and in PHP array_unique() would do the trick.  But I had fun messing with all the Java type troubles and didn’t want to throw all my extra work away.   Type safety makes the number of test scenarios a lot smaller too because you don’t have to worry about casting from strings, floats, etc.
@@ -21,17 +23,6 @@ I used a TestNG data provider, and was going to have it read from a spreadsheet 
 Assumptions:
 If there are multiple duplicates, it only returns the number once.
 It returns the matches unsorted (in the order found.)
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -42,8 +33,11 @@ A palindrome can be read forwards or backwards and it has the same spelling.
 
 Example:  “radar” = true, “blue” = false
 
+How would you test it?
 
-How would you test it?See attached PalindromeDetector.java and PalindromeDetectorTest.java
+
+
+See attached PalindromeDetector.java and PalindromeDetectorTest.java
 
 This test is structured similarly to the first one using TestNG and data providers. I created 4 categories of tests:  
 
@@ -52,21 +46,17 @@ This test is structured similarly to the first one using TestNG and data provide
 3. Tricky cases that depend on assumptions in the implementation
 4. Checking invalid types – which isn’t strictly necessary except the data provider is untyped
 
-
 isPalindrome() simply checks:  string.equals(reverse(string)  I created three implementations of a private function reverse().  One does it the “hard” way
 
 Assumptions:
 It does a simple string comparison.  Numbers, punctuation, etc. included
 It can optionally ignore capitalization and spacing
 Input is a valid String or null (using data provider requires check)
-
-
-
-
 
 
 
 Last Question:  Imagine Amazon making a web page where you can SMS/Text Message people from a web page on the Amazon.com site.  You might use this if you found a good deal or have a gift idea.  What is your test plan and please give us specific examples of how you would test it.  For example don’t just say “stress test it”.  You need to give us specifics on how YOU would stress test it.
+
 
 
 Amazon SMS Test Plan
@@ -121,4 +111,4 @@ Every message that has not sent or failed within 1 minute will be cleared
 Test Strategy
 All testing will be performed manually for the initial release except concurrency and scalability tests.  A utility script (using JMeter) will be provided that spawns 1000 threads on 10 computers and sends 10000 messages simultaneously. 
 
-There will be bug fix releases at the end of each week.  A limited regression test will be run after each release that takes no more than 2 hours.
+There will be bug fix releases at the end of each week.  A limited regression test will be run after each release that takes no more than 2 hours.
